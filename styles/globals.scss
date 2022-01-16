@@ -106,7 +106,7 @@ a {
 
  /* width */
  ::-webkit-scrollbar {
-  width: 2em;
+  width: .5em;
 }
 
 /* Track */
@@ -117,9 +117,12 @@ a {
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: var(--gray-700);
+  border-radius: 1em;
+  width: .3;
+  transition: all 100ms ease-in-out;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: var(--gray-500);
-} 
+}
