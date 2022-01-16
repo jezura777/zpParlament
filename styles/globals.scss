@@ -21,6 +21,13 @@
   --gray-500: #444444;
 }
 
+html {
+
+  scrollbar-color: var(--gray-700) var(--gray-900);
+  scrollbar-width: thin;
+
+}
+
 html,
 body {
   padding: 0;
