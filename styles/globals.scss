@@ -103,3 +103,23 @@ a {
   background-color: var(--blue-600);
 
 }
+
+ /* width */
+ ::-webkit-scrollbar {
+  width: 2em;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--gray-900);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--gray-700);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--gray-500);
+} 

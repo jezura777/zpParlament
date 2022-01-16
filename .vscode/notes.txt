@@ -1,0 +1,2 @@
+make footer
+make custom scroll bar
