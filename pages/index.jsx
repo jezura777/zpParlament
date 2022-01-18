@@ -1,7 +1,7 @@
 import { get } from 'http';
 import Head from 'next/head'
-import { PostCard, Categories, PostWidget } from '../components';
-import { getPost } from '../services'
+import { PostCard, Categories, PostWidget, Footer } from '../components';
+import { getPosts } from '../services'
 
 export default function Home({ posts }) {
   return (
@@ -12,7 +12,7 @@ export default function Home({ posts }) {
         <link rel="icon" href="/favicon.ico" />
 
       </Head>
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
+      <div className="grid grid-rows-1 grid-cols-1 lg:grid-cols-12 gap-12">
         <div className="lg:col-span-9 col-span-1">
 
           {posts.map((post) => <PostCard post={post.node} key={post.title} />)}
@@ -24,6 +24,9 @@ export default function Home({ posts }) {
             <Categories />
           </div>
         </div>
+        <div className="row-span-1">
+          <Footer />
+        </div>
       </div>
     </div>
 
@@ -32,7 +35,7 @@ export default function Home({ posts }) {
 
 export async function getStaticProps() {
 
-  const posts = (await getPost()) || [];
+  const posts = (await getPosts()) || [];
 
   return {
 

@@ -42,7 +42,7 @@ export const PostWidget = ({categories, slug}) => {
 
                     </div>
                     <div className="flex-grow ml-4 ">
-                        <p className='author font-xs'>
+                        <p className='gr-700 font-xs'>
                            
                             {moment(post.createdAt).format('DD. MM. YYYY')}
 

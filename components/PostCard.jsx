@@ -28,14 +28,14 @@ export const PostCard = ({ post }) => {
                         src={post.author.photo.url}
                         height="30px"
                         width="30px"
-                        className="align-middle rounded-xl"
+                        className="align-middle rounded-full"
                         alt={post.author.name}
                     />
-                    <p className="inline aling-middle author ml-2 text-lg">
+                    <p className="inline aling-middle gr-700 ml-2 text-lg">
                         {post.author.name}
                     </p>
                 </div>
-                <div className="font-medium author">
+                <div className="font-medium gr-700">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         className="h-6 w-6 inline mr-2 text-pink-500"
@@ -60,7 +60,7 @@ export const PostCard = ({ post }) => {
 
             <div className="text-center">
                 <Link href={`/post/${post.slug}`}>
-                    <span className="transition duration-500 transform hover:-translate-y-1 inline-block button-blue-600 text-lg font-medium rounded-full text-white px-8 py-3 cursour-pointer">
+                    <span className="transition duration-500 transform hover:-translate-y-1 inline-block button-blue-600 text-lg font-medium rounded-full text-white px-8 py-3 cursor-pointer">
 
                         Přečíst více.
 

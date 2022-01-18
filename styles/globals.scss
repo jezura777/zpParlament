@@ -19,6 +19,11 @@
   --gray-700: #333333;
   --gray-600: #3d3d3d;
   --gray-500: #444444;
+  --gray-400: #4d4d4d;
+  --gray-300: #555555;
+  --gray-200: #5d5d5d;
+  --gray-100: #666666;
+
 }
 
 html {
@@ -99,15 +104,69 @@ a {
 
 }
 
-.author {
+.gr-900 {
 
-  color:#444444;
+  color: var(--gray-900);
+
+}
+
+.gr-800 {
+
+  color: var(--gray-800);
+
+}
+
+.gr-700 {
+
+  color: var(--gray-700);
+
+}
+
+.gr-600 {
+
+  color: var(--gray-600);
+
+}
+
+.gr-500 {
+
+  color: var(--gray-500);
+
+}
+
+.gr-400 {
+
+  color: var(--gray-400);
+
+}
+
+.gr-300 {
+
+  color: var(--gray-300);
+
+}
+
+.gr-200 {
+
+  color: var(--gray-200);
+
+}
+
+.gr-100 {
+
+  color: var(--gray-100);
 
 }
 
 .button-blue-600 {
 
   background-color: var(--blue-600);
+
+}
+
+.bgr-gray-100 {
+
+  background-color: var(--gray-100);
 
 }
 
