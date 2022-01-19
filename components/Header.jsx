@@ -1,5 +1,5 @@
 import React, { useContext, useState, useEffect } from 'react'
-import { getCategories } from '../services';
+import { getCategories, getLogo } from '../services';
 import Link from 'next/link'
 
 
@@ -9,6 +9,9 @@ function Header() {
 
     const [categories, setCategories] = useState([])
 
+    const head = getHeader();
+    console.log(head)
+
     useEffect(() => {
 
         getCategories()
@@ -17,17 +20,18 @@ function Header() {
     }, []);
 
     return (
+
         <div className='container mx-auto bx-auto mb-8'>
             <div className="border-b w-full inline-block border-blue-400 py-8">
                 <div className="md:float-left block">
                     <Link href="/">
                         <span className="cursor-pointer font-bold text-4xl text-white flex gap-2">
                             <img
-                                height="32px"
-                                width="42px"
+                                height="64px"
+                                width="64px"
                                 className='align-middle rounded-sm'
                                 src="./logo.png"
-                                alt="logo žákovského parlamentu slavičín vlára"
+                                alt="logo"
                             />
 
                             Objevit
@@ -51,3 +55,14 @@ function Header() {
 }
 
 export default Header
+
+export async function getHeader() {
+
+    const data = await getLogo();
+
+    return {
+
+        props: { header: data }
+
+    }
+}
