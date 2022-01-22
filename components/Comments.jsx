@@ -29,7 +29,7 @@ const Comments = ({ slug }) => {
                   {' '}
                   kdy:
                   {' '}
-                  {moment(comment.createdAt).format('MM DD, YYYY')}
+                  {moment(comment.createdAt).format('DD MM YYYY')}
                 </p>
                 <p className="whitespace-pre-line text-gray-600 w-full">{parse(comment.comment)}</p>
               </div>

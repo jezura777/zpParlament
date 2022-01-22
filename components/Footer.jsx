@@ -6,7 +6,7 @@ const Footer = () => {
             <div className='px-4 lg:px-0'>
                 <div className='flex items-center m-8 w-full'>
                     <div className='font-medium author'>
-                        <p className="text-2xl align-middle font-semibold">&copy;Jezura777</p>
+                        <p className="text-2xl align-middle font-semibold">&copy;2022 Jezura777</p>
                     </div>
                 </div>
             </div>
