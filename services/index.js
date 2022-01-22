@@ -273,6 +273,6 @@ export const getLogo = async () => {
   `;
   const result = await request(graphqlAPI, query);
 
-  return result.headsConnection.edges.node;
+  return result;
 };
 

@@ -1,7 +1,8 @@
 import { get } from 'http';
 import Head from 'next/head'
-import { PostCard, Categories, PostWidget, Footer } from '../components';
+import { PostCard, Categories, PostWidget, Footer, } from '../components';
 import { getPosts } from '../services'
+import { FeaturedPosts, AdjacentPosts } from '../sections'
 
 export default function Home({ posts }) {
   return (
@@ -12,6 +13,9 @@ export default function Home({ posts }) {
         <link rel="icon" href="/favicon.ico" />
 
       </Head>
+
+      <FeaturedPosts />
+
       <div className="grid grid-rows-1 grid-cols-1 lg:grid-cols-12 gap-12">
         <div className="lg:col-span-9 col-span-1">
 

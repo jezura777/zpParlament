@@ -2,10 +2,8 @@ import React from "react";
 import moment from "moment";
 import Link from "next/link";
 
-moment.locale("cs");
-
 export const PostCard = ({ post }) => {
-    console.log(post);
+    // console.log(post);
 
     return (
         <div className="bg-white shadow-lg rounded-lg p-0 lg:p-8 pb-12 mb-8">
