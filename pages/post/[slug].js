@@ -21,7 +21,7 @@ const PostDetails = ({ post }) => {
                     </div>
                 </div>
 
-                <div className="col-span-12 justify-center align-middle">
+                <div className="col-span-12 justify-center align-middle md:col-span-1">
                     <Footer />
                 </div>
             </div>

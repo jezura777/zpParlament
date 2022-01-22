@@ -24,7 +24,7 @@ const CategoryPost = ({ posts }) => {
                         <Categories />
                     </div>
                 </div>
-                <div className='col-span-12'>
+                <div className='col-span-12 md:col-span-1'>
                     <Footer />
                 </div>
             </div>

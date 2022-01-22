@@ -1,5 +1,5 @@
-import React, { useContext, useState, useEffect } from 'react'
-import { getCategories, getLogo } from '../services';
+import React, { useState, useEffect } from 'react'
+import { getCategories } from '../services';
 import Link from 'next/link'
 
 
@@ -8,8 +8,6 @@ import Link from 'next/link'
 function Header() {
 
     const [categories, setCategories] = useState([])
-
-    const head = getHeader();
 
     useEffect(() => {
 
@@ -33,7 +31,7 @@ function Header() {
                                 alt="logo"
                             /> */}
 
-                            <svg id="svg" version="1.1" xmlns="http://www.w3.org/2000/svg" className='rounded-sm' width="64" height="64" viewBox="0, 0, 400,400">
+                            <svg id="svg" version="1.1" xmlns="http://www.w3.org/2000/svg" className='rounded-sm lg:w-16 lg:h-16' width="40" height="40" viewBox="0, 0, 400,400">
                                 <g id="svgg">
                                     <path id="path0" d="M0.000 200.000 L 0.000 400.000 200.000 400.000 L 400.000 400.000 400.000 200.000 L 400.000 0.000 200.000 0.000 L 0.000 0.000 0.000 200.000
                                         M374.219 200.195 L 374.219 369.531 202.539 369.531 L 30.859 369.531 30.859 200.195 L 30.859 30.859 202.539 30.859 L 374.219 30.859 374.219 
@@ -304,7 +302,7 @@ function Header() {
 
 
 
-                            <p className='text-6xl'>ŽP Slavičín Vlára</p>
+                            <p className='lg:text-6xl'>ŽP Slavičín Vlára</p>
                         </span>
                     </Link>
                 </div>
@@ -325,16 +323,3 @@ function Header() {
 }
 
 export default Header
-
-export async function getHeader() {
-
-    const data = await getLogo();
-
-    console.log(data)
-
-    return {
-
-        props: { data }
-
-    }
-}
