@@ -28,7 +28,7 @@ export default function Home({ posts }) {
             <Categories />
           </div>
         </div>
-        <div className="row-span-1">
+        <div className="col-span-12 justify-center align-middle">
           <Footer />
         </div>
       </div>

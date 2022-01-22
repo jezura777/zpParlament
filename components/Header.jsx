@@ -304,7 +304,7 @@ function Header() {
 
 
 
-                            <p className='aling-middle justify-center'>ŽP Slavičín Vlára</p>
+                            <p className='text-6xl'>ŽP Slavičín Vlára</p>
                         </span>
                     </Link>
                 </div>
