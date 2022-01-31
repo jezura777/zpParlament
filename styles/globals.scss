@@ -90,11 +90,13 @@ a {
   text-decoration: none;
 }
 
-a {
+p {
 
-  color: var(--blue-500);
-  transition: all 0.4s 0s ease-in-out;
+  a {
 
+    color: var(--blue-500);
+    transition: all 0.4s 0s ease-in-out;
+  }
 }
 
 a:hover {
