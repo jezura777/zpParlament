@@ -3,7 +3,6 @@ import moment from "moment";
 import Link from "next/link";
 
 export const PostCard = ({ post }) => {
-    // console.log(post);
 
     return (
         <div className="bg-white shadow-lg rounded-lg p-0 lg:p-8 pb-12 mb-8">
@@ -59,26 +58,10 @@ export const PostCard = ({ post }) => {
             <div className="text-center">
                 <Link href={`/post/${post.slug}`}>
                     <span className="transition duration-500 transform hover:-translate-y-1 inline-block button-blue-600 text-lg font-medium rounded-full text-white px-8 py-3 cursor-pointer">
-
-                        Přečíst více.
-
+                        Přečíst více
                     </span>
                 </Link>
             </div>
-
-            {/* <div className="text-right flex justify-end p-1 hover:p-0 hover:w-9 hover:h-9">
-
-                <img
-                    src='/like.png'
-                    alt="like" 
-                    className='align-middle'
-                    width="32px" 
-                    height="32px"
-                />
-                
-                <p className='font-normal p-1 hover:font-semibold'>{post.likes}</p>
-
-            </div> */}
         </div>
     );
 };
