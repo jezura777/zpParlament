@@ -59,6 +59,5 @@ export async function getStaticPaths() {
     paths: posts.map(({ node: { slug } }) => ({ params: { slug } })),
     fallback: true,
     },
-    revalidate: 1440,
   };
 }
