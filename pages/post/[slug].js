@@ -45,7 +45,6 @@ export async function getStaticProps({ params }) {
   return {
     props: {
       post: data,
-      revalidate: 1440,
     },
   };
 }
@@ -55,9 +54,7 @@ export async function getStaticProps({ params }) {
 export async function getStaticPaths() {
   const posts = await getPosts();
   return {
-    props: {
     paths: posts.map(({ node: { slug } }) => ({ params: { slug } })),
     fallback: true,
-    },
   };
 }
